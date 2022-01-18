@@ -97,7 +97,7 @@
                         'block px-3 py-2 rounded-md text-base font-medium',
                     ]"
                     :aria-current="item.current ? 'page' : undefined"
-                    >{{ item.name }}</DisclosureButton
+                    >{{ $t(item.name) }}</DisclosureButton
                 >
             </div>
             <div class="pt-4 pb-3 border-t border-gray-700">
@@ -132,7 +132,7 @@
                         as="a"
                         :href="item.href"
                         class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-                        >{{ item.name }}</DisclosureButton
+                        >{{ $t(item.name) }}</DisclosureButton
                     >
                 </div>
             </div>
@@ -146,7 +146,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline';
 import { PlusSmIcon } from '@heroicons/vue/solid';
 
 const navigation = [
-    { name: 'Accueil', routeName: 'Home', current: true },
+    { name: 'navbar.home', routeName: 'Home', current: true },
     { name: 'Services', routeName: 'Services', current: false },
     { name: 'A propos', routeName: 'about', current: false },
     { name: 'Contact', routeName: 'contact', current: false },
